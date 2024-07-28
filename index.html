@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Вход - QazaqStroy</title>
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+    rel="stylesheet"
+/>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="login-container">
+
+        <!-- Логотип -->
+        <img src="images/Logo.svg" alt="Логотип" class="logo">
+
+
+        <h2>Войти в аккаунт</h2>
+
+        <!-- Форма авторизаций -->
+        <form>
+            <div class="input-group">
+                <label for="email">Логин</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="input-group">
+                <label for="password">Пароль</label>
+                <div class="password-container">
+                    <input type="password" id="password" name="password" required>
+                    <span class="toggle-password">
+                        <i class="ri-eye-close-line" id="toggle-icon"></i>
+                    </span>
+                </div>
+                <p class="error-message">Неправильный пароль</p>
+            </div>
+
+            <!-- Кнопка -->
+            <button type="submit">Войти</button>
+        </form>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>

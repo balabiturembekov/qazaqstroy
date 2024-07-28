@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+:root {
+    --body-font: "Inter", sans-serif;
+
+    /*======= Colors =======*/
+    --body-color: #f4f4f4;
+    --button-color: #00A0E3;
+    --error-message-color: #EB3333;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--body-font);
+    background-color: var(--body-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.login-container {
+    background-color: #fff;
+    padding: 80px 120px;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 570px;
+}
+
+.logo {
+    max-width: 100px;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-weight: 500;
+    font-size: 24px;
+    color: #222;
+    margin-bottom: 20px;
+}
+
+.input-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 400;
+    font-size: 13px;
+    color: #6B7A80;
+    ;
+}
+
+input[type="email"],
+input[type="password"],
+input[type="text"] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #D1D5DB;
+    border-radius: 4px;
+}
+
+.password-container {
+    position: relative;
+}
+
+.toggle-password {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+.error-message {
+    color: var(--error-message-color);
+    font-size: 13px;
+    margin-top: 5px;
+    /* display: none; */
+}
+
+button {
+    font-size: 16px;
+    font-weight: 500;
+    width: 100%;
+    margin-top: 1.5rem;
+    background-color: var(--button-color);
+    color: #fff;
+    padding: 20px 24px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+button:hover {
+    background-color: #007bb3;
+}
+
+/* Медиа-запросы */
+@media (max-width: 768px) {
+    .login-container {
+        width: 100%;
+        padding: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .login-container {
+        padding: 10px;
+    }
+
+    .logo {
+        max-width: 80px;
+    }
+
+    h2 {
+        font-size: 1.2em;
+        margin-bottom: 15px;
+    }
+
+    label {
+        font-size: 0.9em;
+    }
+
+    input[type="email"],
+    input[type="password"],
+    input[type="text"] {
+        width: 100%;
+        padding: 6px;
+    }
+
+    .toggle-password {
+        right: 5px;
+    }
+
+    button {
+        padding: 8px 15px;
+    }
+}
